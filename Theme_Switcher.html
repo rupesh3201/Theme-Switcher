@@ -63,16 +63,22 @@
             margin: 0px;
             padding: 0px;
         }
+        .bg_lite{
+          
+            margin: 0px;
+            padding: 0px;
+
+        }
       
     </style>
 </head>
-<body class="bg_dark">
+<body class="bg_lite" id="main body">
     <h1 class=" heading">
         Blub Toggler
     </h1>
     <div class="Img_container_div">
-        <img src="./full-moon.png" class="theme_img" onclick="Enable_lite">
-        <img src="./sunny.png" class="theme_img" onclick="Enable_Dark">
+        <img src="./full-moon.png" class="theme_img" onclick="Enable_Dark()">
+        <img src="./sunny.png" class="theme_img" onclick="Enable_lite()">
     
     </div>
     <img src="light-bulb (1).png" class="blub_Off" id="blub_Off">
@@ -93,9 +99,11 @@
         else
             BlubElement.src="./light-bulb.png"
     }
-    Enable_Dark()
+     function Enable_Dark()
     {
-
+        const mainbodyElement = document.getElementById("main body")
+        mainbodyElement.classList.remove("bg_lite")
+        mainbodyElement.classList.add("bg_dark")
     }
    
 </script>
