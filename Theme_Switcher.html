@@ -46,14 +46,15 @@
         }
         .btn_container_div
         {
-          
-            display: flex;
-            text-align: end;
-            
+            position: fixed;
+            margin-left: 5px;
         }
         .theme_img
         {
-            height: 25px;
+            height: 20px;
+            cursor: pointer;
+           
+           
         }
       
     </style>
@@ -63,8 +64,8 @@
         Blub Toggler
     </h1>
     <div class="Img_container_div">
-        <img src="./full-moon.png" class="theme_img">
-        <img src="./sunny.png" class="theme_img">
+        <img src="./full-moon.png" class="theme_img" onclick="Enable_lite">
+        <img src="./sunny.png" class="theme_img" onclick="Enable_Dark">
     
     </div>
     <img src="light-bulb (1).png" class="blub_Off" id="blub_Off">
