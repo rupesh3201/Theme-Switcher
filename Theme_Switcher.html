@@ -60,13 +60,21 @@
     <button class="btn-TOggle" id="btn-TOggle" onclick="blub_on()">
         ON
     </button>
-    <button class="btn-TOggle" id="btn-TOggle">
+    <button class="btn-TOggle" id="btn-TOggle" onclick="blub_Off()">
         OFF
     </button>
 </div>
 <script>
     function blub_on()
     {
+        const BlubElement = document.getElementById("blub_Off")
+        BlubElement.src = "./light-bulb.png"
+       
+    }
+    function blub_Off()
+    {
+        const BlubElement = document.getElementById("blub_Off")
+        BlubElement.src = "./light-bulb (1).png"
        
     }
 
