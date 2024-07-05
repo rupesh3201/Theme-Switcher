@@ -44,9 +44,23 @@
         .btn-TOggle:hover{
             background-color: #555555;
         }
-        .theme_btn
+        .btn_container_div
         {
+            position: fixed;
+            display: flex;
             
+        }
+        .theme_btn_l
+        {
+           margin:10px ;
+           width:80px;
+           border: none;
+           border-radius: 10px;
+           background-color: black;
+           color: white;
+           padding: 5px;
+           cursor: pointer;
+           font-family: 'Times New Roman', Times, serif;
 
         }
     </style>
@@ -55,9 +69,11 @@
     <h1 class=" heading">
         Blub Toggler
     </h1>
-    <button class="theme_btn">
-        ☀️
+    <div class="btn_container_div">
+    <button class="theme_btn_l" id="theme_btn_l" onclick="theme_btn_D">
+    ☀️ &nbsp;Lite
     </button>
+    </div>
     <img src="light-bulb (1).png" class="blub_Off" id="blub_Off">
     <br>
     <br>
@@ -75,11 +91,8 @@
             BlubElement.src="./light-bulb (1).png"
         else
             BlubElement.src="./light-bulb.png"
-            
-
     }
-    
-
+   
 </script>
 
 
