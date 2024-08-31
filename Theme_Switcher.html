@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
+   <!-- theme Switcher -->
     <title>Theme Switcher</title>
     <style>
         .body
@@ -58,8 +58,10 @@
         }
         .bg_dark
         {
-            background-color: 	  	 #1f1f2e;
-            color: white;
+            background-color: 	  
+
+            rgb(10, 9, 9);
+            color:  white;
             margin: 0px;
             padding: 0px;
         }
@@ -67,6 +69,7 @@
           
             margin: 0px;
             padding: 0px;
+            background-color: 		 #fdfeff;
 
         }
       
@@ -107,7 +110,10 @@
     }
     function Enable_lite()
     {
-        
+        const mainbodyElement = document.getElementById("main body")
+        mainbodyElement.classList.remove("bg_dark")
+        mainbodyElement.classList.add("bg_lite")
+
     }
    
 </script>
